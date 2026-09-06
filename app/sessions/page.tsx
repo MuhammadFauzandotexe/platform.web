@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import {
   AlertCircle,
+  Brain,
   Check,
   ChevronDown,
   ChevronRight,
@@ -124,6 +125,11 @@ export default function SessionsPage() {
         </header>
 
         <main className="sessions-content">
+          <section className="knowledge-test-entry">
+            <div className="knowledge-test-entry-icon"><Brain size={22} /></div>
+            <div><h2>Test AI Knowledge</h2><p>Test how well your AI can find the right information from your knowledge base.</p></div>
+            <button className="primary-button" onClick={() => router.push('/knowledge/test')}><Brain size={15} /> Test Knowledge</button>
+          </section>
           <div className="sessions-heading">
             <div><div className="eyebrow">Connections</div><h1>WhatsApp Sessions</h1><p>Manage and monitor your connected WhatsApp sessions.</p></div>
             <div className="sessions-actions">
