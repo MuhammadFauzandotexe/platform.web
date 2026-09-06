@@ -18,7 +18,7 @@ export function ProtectedPlaceholder({ title, description }: PlaceholderProps) {
   const [accountOpen, setAccountOpen] = useState(false)
 
   useEffect(() => {
-    if (!isAuthLoading && !authState) router.replace('/')
+    if (!isAuthLoading && !authState) router.replace('/login')
   }, [authState, isAuthLoading, router])
 
   if (isAuthLoading || !authState) {

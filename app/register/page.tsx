@@ -98,7 +98,7 @@ export default function RegisterPage() {
               {registrationResponse.accountPlan && <span>Plan: <strong>{registrationResponse.accountPlan}</strong></span>}
             </div>
           )}
-          <Link className="primary-button" href="/">Back to login <ArrowRight size={17} /></Link>
+          <Link className="primary-button" href="/login">Back to login <ArrowRight size={17} /></Link>
         </section>
       </main>
     )
@@ -175,7 +175,7 @@ export default function RegisterPage() {
           </button>
         </form>
 
-        <p className="login-prompt">Already have an account? <Link href="/">Sign in</Link></p>
+        <p className="login-prompt">Already have an account? <Link href="/login">Sign in</Link></p>
       </section>
     </main>
   )

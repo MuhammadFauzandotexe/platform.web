@@ -78,7 +78,7 @@ export default function SessionsPage() {
   }, [])
 
   useEffect(() => {
-    if (!isAuthLoading && !authState) router.replace('/')
+    if (!isAuthLoading && !authState) router.replace('/login')
   }, [authState, isAuthLoading, router])
 
   useEffect(() => {

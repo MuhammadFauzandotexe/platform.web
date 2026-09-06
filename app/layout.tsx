@@ -4,8 +4,8 @@ import { AuthProvider } from '../components/auth-provider'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'WhatsApp session setup | Luma',
-  description: 'Create a tenant-scoped WhatsApp session for your business.',
+  title: 'Luma | Smarter WhatsApp conversations',
+  description: 'Connect WhatsApp, teach your AI, and build smarter customer conversations with Luma.',
   generator: 'v0.app',
 }
 

@@ -64,7 +64,7 @@ export default function CreateSessionPage() {
   const syncRequestId = useRef(0)
 
   useEffect(() => {
-    if (!isAuthLoading && !authState) router.replace('/')
+    if (!isAuthLoading && !authState) router.replace('/login')
   }, [authState, isAuthLoading, router])
 
   useEffect(() => {
